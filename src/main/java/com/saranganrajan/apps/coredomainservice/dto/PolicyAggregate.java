@@ -1,16 +1,16 @@
 package com.saranganrajan.apps.coredomainservice.dto;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.List;
 
 @Builder
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@JsonSerialize
+@ToString
 public class PolicyAggregate {
     Policy policy;
     List<Customer> customers;
