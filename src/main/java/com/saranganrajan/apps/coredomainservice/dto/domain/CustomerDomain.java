@@ -10,6 +10,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @Getter
 public class CustomerDomain {
+    private String customerTransactionId;
     private String customerNumber;
     private String customerName;
     private LocalDate dateOfBirth;

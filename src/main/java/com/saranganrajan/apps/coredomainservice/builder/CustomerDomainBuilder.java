@@ -27,6 +27,7 @@ public class CustomerDomainBuilder {
                   .findFirst().get();
 
           CustomerDomain customerDomain = CustomerDomain.builder()
+                  .customerTransactionId(customer.getCustomerTransactionId())
                   .customerName(customer.getCustomerName())
                   .customerNumber(customerPolicy.getCustomerNumber())
                   .dateOfBirth(customer.getDateOfBirth())

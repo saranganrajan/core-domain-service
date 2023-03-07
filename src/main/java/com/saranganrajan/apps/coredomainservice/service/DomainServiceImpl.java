@@ -65,6 +65,7 @@ public class DomainServiceImpl implements DomainService {
                       .build());
               CustomerPoliciesDomain customerPoliciesDomain = CustomerPoliciesDomain.builder()
                       .customerName(customerDomains.get(0).getCustomerName())
+                      .customerTransactionId(customerDomains.get(0).getCustomerTransactionId())
                       .customerNumber(customerDomains.get(0).getCustomerNumber())
                       .dateOfBirth(customerDomains.get(0).getDateOfBirth())
                       .email(customerDomains.get(0).getEmail())
@@ -81,6 +82,7 @@ public class DomainServiceImpl implements DomainService {
                 CustomerPoliciesDomain customerPoliciesDomain = CustomerPoliciesDomain.builder()
                         .customerName(customerDomains.get(0).getCustomerName())
                         .customerNumber(customerDomains.get(0).getCustomerNumber())
+                        .customerTransactionId(customerDomains.get(0).getCustomerTransactionId())
                         .dateOfBirth(customerDomains.get(0).getDateOfBirth())
                         .email(customerDomains.get(0).getEmail())
                         .phoneNumber(customerDomains.get(0).getPhoneNumber())
@@ -96,6 +98,7 @@ public class DomainServiceImpl implements DomainService {
                 customerPoliciesDomain = CustomerPoliciesDomain.builder()
                         .customerName(customerDomains.get(1).getCustomerName())
                         .customerNumber(customerDomains.get(1).getCustomerNumber())
+                        .customerTransactionId(customerDomains.get(1).getCustomerTransactionId())
                         .dateOfBirth(customerDomains.get(1).getDateOfBirth())
                         .email(customerDomains.get(1).getEmail())
                         .phoneNumber(customerDomains.get(1).getPhoneNumber())
@@ -121,7 +124,6 @@ public class DomainServiceImpl implements DomainService {
         } else {
             log.info("No customer domains to publish");
         }
-
     }
 
 }

@@ -12,6 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 @Getter
 public class PolicyDomain {
+    private String policyTransactionId;
     private String policyNumber;
     private String plan;
     private LocalDate policyEffectiveDate;

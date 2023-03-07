@@ -11,6 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 @Getter
 public class CustomerPoliciesDomain {
+    private String customerTransactionId;
     private String customerNumber;
     private String customerName;
     private LocalDate dateOfBirth;

@@ -18,6 +18,7 @@ public class PolicyDomainBuilder {
         if(policyAggregate.getCustomers().size() > 1) {
             return PolicyDomain.builder()
                     .agentName(policyAggregate.getPolicy().getAgentName())
+                    .policyTransactionId(policyAggregate.getPolicy().getPolicyTransactionId())
                     .paymentMode(policyAggregate.getPolicy().getPaymentMode())
                     .plan(policyAggregate.getPolicy().getPlan())
                     .policyEffectiveDate(policyAggregate.getPolicy().getPolicyEffectiveDate())

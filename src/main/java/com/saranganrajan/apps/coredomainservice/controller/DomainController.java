@@ -23,7 +23,6 @@ public class DomainController {
 
     @PostMapping(path = "/domain/process", consumes = "application/json")
     public ResponseEntity<PolicyAggregate> processAggregate(@RequestBody PolicyAggregate policyAggregate) {
-       //log.info("policy Object: {}", new Gson().toJson(policyAggregate));
        domainService.buildDomainObjects(policyAggregate);
         return ResponseEntity.ok(policyAggregate);
     }
