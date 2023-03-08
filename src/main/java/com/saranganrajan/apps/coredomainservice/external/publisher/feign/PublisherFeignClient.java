@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
-@FeignClient(name="core-domain-publisher", url="http://localhost:8083")
+@FeignClient(name="core-domain-publisher", url="http://20.120.120.231:8083")
 public interface PublisherFeignClient {
 
     @PostMapping(path = "/domain/policy/publish", consumes = "application/json")
